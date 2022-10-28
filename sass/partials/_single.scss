@@ -1,0 +1,100 @@
+.single .content-area #main {
+    background: white;
+
+    .entry-title, .entry-content {
+        margin: 0 1.5rem;
+        background: white;
+    }
+
+    article .fas {
+        color: $heading-color;
+        font-size: .75rem;
+    }
+
+    article h2 .fa-bread-slice {
+        align-self: center;
+        padding-right: 2px;
+        object-fit: fill;
+    }
+
+    h2.entry-title {
+        margin: 0 0 0 1.5rem;
+        padding: 3% 0;
+        display: flex;
+        align-content: center;
+    }
+
+    div.entry-thumbnail img {
+        max-height: 300px;
+    }
+}
+
+.single-details {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-categories, div.single-tags {
+    justify-self: center;
+    text-align: center;
+
+    .fas {
+        color: $heading-color;
+    }
+}
+
+div.single-details {
+    margin: 4% 0 0 0;
+}
+
+.single-tags{
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+.single {
+    background: white;
+}
+// ******************************************** //
+// ****************Media Break***************** //
+// ******************************************** //
+
+// ************600px and up Single************* //
+
+@media screen and (min-width: 600px) { 
+
+    .single {
+        .content-area, .entry-content, .entry-footer, #main {
+            margin: 0 8rem;
+        }
+
+        .entry-thumbnail {
+            margin: 0 7rem;
+        }
+    }
+
+    .single .content-area #main h2.entry-title {
+        margin: 0 0 0 -.5rem;
+    }
+}
+
+
+// ************1000px and up Single************* //
+
+@media screen and (min-width: 1000px) { 
+
+    .single {
+        .content-area, .entry-content, .entry-footer, #main {
+            margin: 0 17rem;
+        }
+
+        .entry-thumbnail {
+            margin: 0 16rem;
+        }
+    }
+
+    .single .content-area #main h2.entry-title {
+        margin: 0 0 0 -.5rem;
+    }
+}
+

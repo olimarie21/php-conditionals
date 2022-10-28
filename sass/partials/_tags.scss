@@ -1,0 +1,45 @@
+.tag-page-title {
+    @include archiveHeader;
+}
+
+.tag #primary #main article h2.entry-title {
+    @include archiveTitle;
+}
+
+.tag-page-title:not(:first-of-type) {
+    display: none;
+}
+
+.tag #primary #main article h2.entry-title a {
+    color: $heading-color;
+}
+
+// ******************************************** //
+// ****************Media Break***************** //
+// ******************************************** //
+
+// ************600px and up Tag*********** //
+
+@media screen and (min-width: 600px) {
+    .tag #primary #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    h2.tag-page-title {
+        grid-column: 1/ 3;
+        margin: 0;
+        padding: 1.5rem 0 0 0;
+        text-align: center;
+    }
+
+    .tag #primary #main article {
+        padding: 0 1rem;
+
+        img {
+            height: 350px;
+        }
+    }
+}

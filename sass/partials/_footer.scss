@@ -1,0 +1,55 @@
+.site-footer {
+    background: $secondary-background;
+    margin: 8px 0 0 0;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    font-family: $body-font;
+}
+
+.site-footer p {
+    padding: 0 0 3px 0;
+    margin: 2% 0 0 0;
+    color: $heading-color;
+}
+
+
+
+// Social Menu Styling
+.social-menu a[href^="https://facebook.com"]:before {
+    @include socialMenu;
+    content: "\f082";
+}
+
+.social-menu a[href^="https://twitter.com"]:before {
+    @include socialMenu;
+    content: "\f081";
+}
+
+.social-menu a[href^="https://instagram.com"]:before {
+    @include socialMenu;
+    content: "\e055";
+}
+
+.screen-reader-text {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+article .fas {
+    color: #2f4550;
+    font-size: 1rem;
+}
+
+.social-menu {
+    display: flex;
+    justify-content: center;
+
+    li.menu-item {
+        padding: 0 3px;
+    }
+}

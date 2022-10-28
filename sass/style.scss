@@ -1,0 +1,65 @@
+/*
+Theme Name: a7oliviaunderdah
+Author: Olivia Underdah
+Description: Starter theme for theme building classes. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: starthere
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+Table of Contents
+
+1.  reset
+2.  variables
+3.  base
+4.  mixins
+5.  header
+6.  footer
+7.  homepage
+8.  single page
+9.  categories
+10. tags
+11. search
+12. error
+
+*/
+
+// 1.   reset
+        @import 'partials/_reset';
+
+// 2.   variables
+        @import 'partials/_variables';
+
+// 3.   base
+        @import 'partials/_base';
+
+// 4.   mixins
+        @import 'partials/_mixin'; 
+
+// 5.   header
+        @import 'partials/_header';
+
+// 6.   footer
+        @import 'partials/_footer';
+
+// 7.   homepage
+        @import 'partials/_homepage';
+
+// 8.   single page
+        @import 'partials/_single';
+
+// 9.   categories
+        @import 'partials/_category';
+
+// 10.  tags
+        @import 'partials/_tags';
+
+// 11.  search
+        @import 'partials/_search';
+
+// 12. error
+        @import 'partials/_error';

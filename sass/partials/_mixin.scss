@@ -1,0 +1,20 @@
+@mixin archiveHeader {
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    text-align: center;
+}
+
+@mixin archiveTitle {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+@mixin socialMenu {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+}

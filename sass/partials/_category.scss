@@ -1,0 +1,44 @@
+.category-title {
+    @include archiveHeader;
+}
+
+.category #primary #main article h2.entry-title {
+    @include archiveTitle;
+}
+
+.category-title:not(:first-of-type) {
+    display: none;
+}
+
+.category #primary #main article h2.entry-title a {
+    color: $heading-color;
+}
+
+// ******************************************** //
+// ****************Media Break***************** //
+// ******************************************** //
+
+// ************600px and up Category*********** //
+
+@media screen and (min-width: 600px) {
+    .category #primary #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem;
+    }
+
+    h2.category-title {
+        grid-column: 1/ 3;
+        margin: 0;
+        padding: 1.5rem 0 0 0;
+        text-align: center;
+    }
+
+    .category #primary #main article {
+        padding: 0 1rem;
+
+        img {
+            height: 350px;
+        }
+    }
+}

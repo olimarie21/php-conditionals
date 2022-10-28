@@ -1,0 +1,26 @@
+.error404 #primary h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2px 0;
+}
+
+.error404 #primary #main img {
+    height: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+.error404 #primary #main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+    background: white;
+}
+
+.error404 {
+    background: white;
+}

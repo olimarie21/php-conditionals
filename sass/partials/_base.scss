@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: $main-background;
+}
+
+#main {
+    background: $main-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    color: $heading-color;
+}
+
+p, ul, li {
+    font: $body-font;
+    color: $primary-text-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a, a:visited {
+    color: $primary-text-color;
+}
+
+h1 a:visited {
+    color: $heading-color;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#symbol {
+    margin: 0;
+    padding: 0 1.5px;
+    line-height: 1;
+    color: black;
+}

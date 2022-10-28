@@ -1,0 +1,357 @@
+/*
+Theme Name: a7oliviaunderdah
+Author: Olivia Underdah
+Description: Starter theme for theme building classes. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: starthere
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+Table of Contents
+1.
+2.
+3.
+....
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background: white; }
+
+#main {
+  background: #eef; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+  color: crimson; }
+
+p, ul, li {
+  font: "Newsreader", serif;
+  color: #333; }
+
+a {
+  text-decoration: none; }
+
+li a, a:visited {
+  color: #333; }
+
+h1 a:visited {
+  color: crimson; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#symbol {
+  margin: 0;
+  padding: 0 1.5px;
+  line-height: 1;
+  color: black; }
+
+.site-header {
+  background-image: url("http://localhost/assignment7duplicator_package/wp-content/uploads/2021/06/jonathan-pielmayer-ecbZ5gEE-60-unsplash.jpg");
+  background-position: center;
+  background-size: stretch;
+  padding-bottom: 1rem;
+  margin-bottom: 0; }
+  .site-header h1 {
+    text-align: center;
+    background: rgba(106, 145, 193, 0.6);
+    padding: 4rem 0;
+    font-size: 3rem; }
+
+.site-header form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px; }
+
+#searchform label {
+  display: none; }
+
+#searchform #s, #searchform #searchsubmit {
+  padding: 5px;
+  font-family: "Newsreader", serif;
+  border-radius: .5rem; }
+
+.site-header .menu-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  .site-header .menu-container ul li {
+    background: powderblue;
+    padding: 5px;
+    text-align: center;
+    margin: 2px 0;
+    border-radius: 2rem; }
+  .site-header .menu-container ul a {
+    text-decoration: none; }
+
+@media screen and (min-width: 600px) {
+  .site-header .menu-container ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 2%; }
+    .site-header .menu-container ul li {
+      width: 31%; } }
+
+#primary {
+  margin: 0;
+  padding: 0; }
+
+#main > .post > h2 > a {
+  color: crimson;
+  margin-left: 2%; }
+
+h2.entry-title {
+  padding: 2rem 0 8px 0;
+  margin: 0;
+  margin-bottom: 2%; }
+
+div.entry-title {
+  padding: 0;
+  margin: 1% 2% 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 20px; }
+  div.entry-title a {
+    font-family: "Newsreader", serif; }
+
+.entry-content {
+  margin: 1% 2%; }
+
+.entry-thumbnail img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover; }
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .home #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem; }
+    .home #main img {
+      max-width: 100%;
+      height: 350px;
+      object-fit: cover; }
+    .home #main article {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between; }
+    .home #main article:nth-child(3n) {
+      width: 100%; } }
+
+@media screen and (min-width: 900px) {
+  .home #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem;
+    gap: 1rem; }
+    .home #main img {
+      max-width: 100%;
+      height: 350px;
+      object-fit: cover; }
+    .home #main article {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: center;
+      height: 100%; }
+    .home #main article:nth-child(2), .home #main article:nth-child(6), .home #main article:nth-child(11), .home #main article:nth-child(14) {
+      width: 65%;
+      height: 100%;
+      align-self: flex-start; }
+      .home #main article:nth-child(2) h2.entry-title, .home #main article:nth-child(6) h2.entry-title, .home #main article:nth-child(11) h2.entry-title, .home #main article:nth-child(14) h2.entry-title {
+        margin: 2.5px 0 0 0; } }
+
+@media screen and (min-width: 1200px) {
+  .home #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem; }
+    .home #main img {
+      height: 350px; }
+    .home #main article {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: center;
+      height: 100%; }
+    .home #main article:nth-child(2), .home #main article:nth-child(6), .home #main article:nth-child(11), .home #main article:nth-child(14) {
+      width: 49%;
+      height: 100%;
+      align-self: flex-start; }
+      .home #main article:nth-child(2) h2.entry-title, .home #main article:nth-child(6) h2.entry-title, .home #main article:nth-child(11) h2.entry-title, .home #main article:nth-child(14) h2.entry-title {
+        margin: 2.5px 0 0 0; } }
+
+.site-footer {
+  background: powderblue;
+  margin: 8px 0 0 0;
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-family: "Newsreader", serif; }
+
+.site-footer p {
+  padding: 0;
+  margin: 4% 0 1px 0;
+  color: crimson; }
+
+.social-menu a[href^="https://facebook.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a"; }
+
+.social-menu a[href^="https://twitter.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099"; }
+
+.social-menu a[href^="https://instagram.com"]:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d"; }
+
+.screen-reader-text {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+article .fas {
+  color: #2f4550;
+  font-size: .75rem; }
+
+.social-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2%; }
+
+.single .content-area #main {
+  background: white; }
+  .single .content-area #main article .entry-title, .single .content-area #main article .entry-content {
+    margin: 0 1.5rem; }
+  .single .content-area #main article .fas {
+    color: crimson;
+    font-size: .75rem; }
+  .single .content-area #main article h2 .fa-bread-slice {
+    align-self: center;
+    padding-right: 2px;
+    object-fit: fill; }
+  .single .content-area #main h2.entry-title {
+    margin: 0 0 0 1.5rem;
+    padding: 3% 0;
+    display: flex;
+    align-content: center; }
+  .single .content-area #main div.entry-thumbnail img {
+    max-height: 300px; }
+
+.single-details {
+  flex-direction: column;
+  justify-content: center; }
+
+.single-categories, div.single-tags {
+  justify-self: center;
+  text-align: center; }
+
+div.single-details {
+  margin: 4% 0 0 0; }
+
+.single-tags {
+  margin-top: 1%; }
+
+@media screen and (min-width: 600px) {
+  .single .content-area, .single .entry-content, .single .entry-footer, .single #main {
+    margin: 0 8rem; }
+  .single .entry-thumbnail {
+    margin: 0 7rem; } }
+
+.category-title {
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+  text-align: center; }
+
+.category #primary #main article h2.entry-title {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.category-title:not(:first-of-type) {
+  display: none; }
+
+.category #primary #main article h2.entry-title a {
+  color: crimson; }
+
+@media screen and (min-width: 600px) {
+  .category #primary #main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    margin: 0 1rem; }
+  h2.category-title {
+    grid-column: 1/ 4;
+    margin: 0;
+    padding: 1.5rem 0 0 0;
+    text-align: center; } }
+
+.search-results-title {
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+  text-align: center; }
+
+.search #primary #main article h2.entry-title {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.search-results-title:not(:first-of-type) {
+  display: none; }
+
+.search #primary #main article h2.entry-title a {
+  color: crimson; }
+
+.tag-page-title {
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+  text-align: center; }
+
+.tag #primary #main article h2.entry-title {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.tag-page-title:not(:first-of-type) {
+  display: none; }
+
+.tag #primary #main article h2.entry-title a {
+  color: crimson; }
